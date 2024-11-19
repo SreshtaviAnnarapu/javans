@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class UserInputExample {
+    public static void main(String[] args) {
+        // Create a scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for their name
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();  // Read the user's name
+
+        // Prompt the user for their age
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();  // Read the user's age
+
+        // Print a message with the inputted data
+        System.out.println("Hello, " + name + "!");
+        System.out.println("You are " + age + " years old.");
+        
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
+}
+
